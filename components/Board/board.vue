@@ -1,5 +1,5 @@
 <template>
-    <Square></Square>
+    <Square test="props"></Square>
 </template>
 
 <script lang="ts">
