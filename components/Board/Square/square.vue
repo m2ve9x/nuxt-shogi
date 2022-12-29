@@ -1,13 +1,14 @@
 <template>
-    <div> {{ test }}</div>
+    <div> {{ piece?.name }}</div>
 </template>
 
-<script setup lang="ts">
+<script setup lang="ts">import { Piece } from '~/domain/piece/piece';
+
 interface Props {
-    test: string;
+    piece: Piece | null;
 }
 
 const Props = withDefaults(defineProps<Props>(), {
-    test: "test"
+    piece: null,
 });
 </script>
